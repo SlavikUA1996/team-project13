@@ -1,0 +1,116 @@
+.about{
+    padding-top: 60px;
+    padding-bottom: 25px;
+    background-color: $background-color;
+    color:$text-primary-color;
+}
+.about_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 210px;
+    margin-bottom: 32px;
+   .about_pre-title{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+   };
+   .about_title{
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27em;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+   };
+}
+@media screen and (min-width: 480px) and (max-width:767px) {
+    .about_pre-title{
+        order:1;
+    }
+    .about_title{
+        order:0;
+    }
+}
+.about_img-container{
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 40px;
+    &::before{
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 -22px 0 0 rgba(248, 210, 78, 0.7);
+    }
+}
+.about_description{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 220px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    p{
+        width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.76em;
+    text-align: center;
+    letter-spacing: 0.04em;
+    &:not(:last-of-type){
+        margin-bottom: 4px;
+    };}
+}
+.about>button{
+    cursor: pointer;
+    border: none;
+    width: 164px;
+    height: 42px;
+    padding: 12px 34px;
+    background-color: $bcg-button-icon-accent-color;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+    svg{
+        width: 12px;
+        height: 12px;
+        fill:#000000;
+        margin-left: 4px;
+    }
+    &:hover{
+        background-color: #0A8817;
+    }
+    &:focus{
+        background-color: #0A8817;
+        color: $text-primary-color;
+        svg{
+            fill: $text-primary-color;
+        }
+    }
+    &:disabled{
+        background-color: #ABABAB;
+        color: #131313;
+    }
+}
