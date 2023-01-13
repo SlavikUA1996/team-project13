@@ -1,1 +1,31 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';/*# sourceMappingURL=index.css.map */
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.reviews .karusel__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reviews .karusel__img {
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  color: #d9d9d9;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #84a178;
+}/*# sourceMappingURL=index.css.map */
