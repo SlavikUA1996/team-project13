@@ -1,0 +1,43 @@
+.container {
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// padding
+
+@media screen and (max-width: $pre-desktop) {
+    .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+}
+
+// width
+
+@media screen and (min-width: $mobile){
+    .container {
+        width: 480px;
+    }
+    
+}
+
+@media screen and (min-width: $tablet){
+    .container {
+        width: 768px;
+    }
+    
+}
+
+@media screen and (min-width: $desktop){
+    .container {
+        width: 1200px;
+    }
+}
