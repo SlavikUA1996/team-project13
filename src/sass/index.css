@@ -10,6 +10,24 @@
   border-radius: 50%;
   margin-bottom: 32px;
 }
+.reviews .karusel__text-box {
+  background-color: #84a178;
+  margin-bottom: 32px;
+  border-radius: 10px;
+}
+.reviews .karusel__text {
+  color: #fcfcfc;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+}
+.reviews .karusel__name {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+}
 
 .slick-dots li button:before {
   font-family: "slick";
@@ -18,8 +36,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   content: "•";
   text-align: center;
   color: #d9d9d9;
@@ -28,4 +46,13 @@
 
 .slick-dots li.slick-active button:before {
   color: #84a178;
+}
+
+@media screen and (max-width: 767px) {
+  .reviews .karusel__text-box {
+    padding: 35px 39px;
+  }
+  .reviews .karusel__text {
+    width: 202px;
+  }
 }/*# sourceMappingURL=index.css.map */
