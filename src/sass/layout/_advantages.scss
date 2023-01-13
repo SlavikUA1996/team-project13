@@ -24,11 +24,17 @@
   }
 }
 
-// .list {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-// }
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
