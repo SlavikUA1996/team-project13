@@ -3,6 +3,8 @@
 }
 
 .advantages__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-left: 125px;
   padding-right: 125px;
   margin-left: auto;
@@ -10,8 +12,15 @@
   background-color: $background-color;
 
   @media screen and (min-width: 760px) {
+    padding-top: 80px;
+    padding-bottom: 204px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 146px;
+    padding-bottom: 178px;
   }
 }
 
@@ -32,8 +41,14 @@
   color: #fff;
   text-align: center;
   font-family: 'Montserrat';
+  &:not(:last-child) {
+    padding-bottom: 32px;
+  }
   @media screen and (min-width: 760px) {
     flex-basis: calc((100% - 64px) / 3);
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -44,43 +59,42 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  position: relative;
-  padding-top: 90px;
+  padding-top: 16px;
 
   @media screen and (min-width: 760px) {
+    padding-top: 32px;
     font-size: 48px;
     line-height: 59px;
   }
   @media screen and (min-width: 1200px) {
+    padding-top: 40px;
     font-size: 58px;
     line-height: 71px;
   }
 }
 
-.advantages__number::before {
+.advantages__item::before {
   content: '';
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  right: 160px;
+  position: relative;
+  display: inline-block;
   background-color: $bcg-button-icon-accent-color;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
 
 .adv-1::before {
-  content: url(../images/png1x-icon-cow-min.png);
+  background-image: url(../images/png1x-icon-cow-min.png);
 }
 
 .adv-2::before {
-  content: url(../images/png1x-icon-weight-min.png);
+  background-image: url(../images/png1x-icon-weight-min.png);
 }
 
 .adv-3::before {
-  content: url(../images/png1x-icon-ice-crema-min.png);
+  background-image: url(../images/png1x-icon-ice-crema-min.png);
 }
 
 .advantages__text {
