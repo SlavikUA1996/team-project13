@@ -88,12 +88,12 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #000000;
+    color: $text-btn-color;
     margin: 0 auto;
     svg{
         width: 12px;
         height: 12px;
-        fill:#000000;
+        fill:$text-btn-color;
         margin-left: 4px;
     }
     &:hover{
@@ -107,8 +107,8 @@
         }
     }
     &:disabled{
-        background-color: #ABABAB;
-        color: #131313;
+        background-color: $text-secondary-color;
+        color: $text-main-color;
     }
 }
 @media screen and (min-width: $mobile) and (max-width:$pre-tablet) {
@@ -235,7 +235,7 @@
         width: 100vw;
         max-width: 280px;
         max-height: 460px;
-        background: #ffffff;
+        background: $text-minor-color;
         border-radius: 10px;
         transform: translate(-50%, -50%) scale(1);
         transition: transform 300ms;
@@ -257,20 +257,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
+        background-color: $text-minor-color;
         cursor: pointer;
         padding: 0;
         border: none;
         svg {
-        fill: #131313;
-        background-color: #fff;
+        fill: $text-main-color;
+        background-color: $text-minor-color;
         width: 20px;
         height: 20px;
       
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       };
     //   &:hover svg, &:focus svg{
-    //     fill: #131313;
+    //     fill: $text-main-color;
     //   };
       }
       .about_modal-title{
@@ -282,7 +282,7 @@
         display: flex;
         align-items: center;
         text-align: center;
-        color: #131313;
+        color: $text-main-color;
         margin-bottom: 20px;
       }
       .about_modal-description{
@@ -292,7 +292,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 1.4em;
-        color: #131313;
+        color: $text-main-color;
       }
       .about_modal-window> iframe{
         width: 224px;
