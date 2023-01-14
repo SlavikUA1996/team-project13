@@ -24,10 +24,25 @@
             src="./images/png1x-about-cow-mob-min.png" 
             sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px, (min-width: 320px) 280px, 100vw"
             alt="Cow on the field"></div>
-        <div class="about_description"><p>Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p>
-        <p>We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p></div>
+        <div class="about_text-button-container">
+            <div class="about_description"><p>Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p>
+        <p>We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
+    <p>This is enough to choose ice cream and 
+        coffee for any mood!</p></div>
+        <button class="about_btn" type="button" data-modal-open="">Read more <svg><use href="./images/icon.svg#icon-arrow-right-small"></use></svg></button>
     </div>
-        <button type="button">Read more <svg><use href="./images/icon.svg#icon-arrow-right-small"></use></svg></button>
+    </div>
+    <div class="backdrop is-hidden" data-modal="">
+        <div class="about_modal-window">
+          <button class="about_close-btn" data-modal-close="">
+            <svg><use href="./images/icon.svg#icon-close-mob"></use></svg>
+          </button>
+          <h2 class="about_modal-title">How it’s made?</h2>
+          <iframe src="https://www.youtube.com/embed/y_YL3R32RzU"></iframe>
+          <p class="about_modal-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        </div>
+    </div>
     </section>
+    <script src="../js/about-modal.js"></script>
 </body>
 </html>
