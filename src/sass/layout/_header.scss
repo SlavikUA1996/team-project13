@@ -1,0 +1,158 @@
+/* Header */
+header {
+    position: relative;
+    padding-top: 14px;
+    justify-content: baseline;
+
+    @media screen and(min-width:$tablet) {
+        padding-top: 20px;
+    }
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.button__label {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+}
+
+.navigation__list {
+    display: flex;
+
+    @media screen and(max-width:$pre-desktop) {
+        display: none;
+    }
+}
+
+.navigation__list li {
+    &:not(:last-child) {
+        margin-right: 28px;
+    }
+}
+
+.navigation__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $text-primary-color;
+}
+
+/* Button */
+.header__button {
+    position: relative;
+    cursor: pointer;
+    padding: 12px 36px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    border: 1px solid transparent;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: $bcg-button-icon-accent-color;
+    min-width: 155px;
+    height: 42px;
+    margin-left: 36px;
+
+    @media screen and(max-width:$mobile) {
+        display: none;
+    }
+}
+
+.header__button span {
+    padding-right: 7.75px;
+}
+
+.header__button svg {
+    position: absolute;
+    top: 15px;
+}
+
+.hero__button {
+    position: relative;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    color: $text-btn-color;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid $bcg-button-icon-accent-color;
+    border-radius: 8px;
+    min-width: 108px;
+    padding: 11px 26px 11px 26px;
+
+}
+
+.hero__button span {
+    padding-right: 7.75px;
+}
+
+.hero__button svg {
+    position: absolute;
+    top: 15px;
+}
+
+.hero__list {
+    display: flex;
+}
+
+.hero__button--second {
+    cursor: pointer;
+    border: none;
+    color: $bcg-button-icon-accent-color;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    text-decoration-line: underline;
+}
+
+.mobile-menu-button {
+    position: relative;
+    cursor: pointer;
+    padding: 12px 36px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    border: 1px solid transparent;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: $bcg-button-icon-accent-color;
+    min-width: 155px;
+
+    @media screen and(min-width:$mobile) {
+        display: none;
+    }
+}
+
+.mobile-menu-button span {
+    padding-right: 7.75px;
+}
+
+.mobile-menu-button svg {
+    position: absolute;
+    top: 15px;
+}
