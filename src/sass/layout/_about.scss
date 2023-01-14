@@ -31,16 +31,6 @@
     text-transform: uppercase;
    };
 }
-@media screen and (min-width: $mobile) and (max-width:$pre-tablet) {
-    .about_pre-title{
-        order:1;
-        margin-bottom: 0;
-    }
-    .about_title{
-        order:0;
-        margin-bottom: 12px;
-    }
-}  
 .about_img-container{
     margin: 0 auto;
     position: relative;
@@ -121,6 +111,19 @@
         color: #131313;
     }
 }
+@media screen and (min-width: $mobile) and (max-width:$pre-tablet) {
+    .about_pre-title{
+        order:1;
+        margin-bottom: 0;
+    }
+    .about_title{
+        order:0;
+        margin-bottom: 12px;
+    }
+    .about_description{
+        margin-bottom: 24px;
+    }
+}  
 @media screen and (min-width: $tablet) {
     .about{
         padding-bottom: 30px;}
@@ -210,7 +213,7 @@
             }
     }
     /*-------------ABOUT MODAL-------------*/
-    .backdrop {
+    .about_backdrop {
         position: fixed;
         top: 0;
         left: 0;
@@ -220,7 +223,7 @@
         z-index: 1;
         transition: opacity 300ms linear, visibility 300ms linear;
       }
-      .backdrop.is-hidden {
+      .about_backdrop.is-hidden {
         opacity: 0;
         pointer-events: none;
         visibility: hidden;
@@ -242,7 +245,7 @@
         align-items: center;
         justify-content: center;
       }
-      .backdrop.is-hidden .modal-window {
+      .about_backdrop.is-hidden .about_modal-window {
         transform: translate(-50%, -50%) scale(0);
       }
       .about_close-btn {
