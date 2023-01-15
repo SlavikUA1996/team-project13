@@ -50,38 +50,58 @@
 
 .hero__image--dots {
     bottom: 0;
-    right: 0;
+    left: 5%;
+
+    @media screen and (min-width:400px) {
+        left: 15%;
+    }
+
+    @media screen and (min-width:$mobile) {
+        left: 28%;
+    }
+
+    @media screen and (min-width:525px) {
+        left: 30%;
+    }
+
+    @media screen and (min-width:637px) {
+        left: 32%;
+    }
+
+    @media screen and (min-width:$tablet) {
+        left: auto;
+    }
 
 }
 
 .hero__image--icecream {
     bottom: 0;
-    right: 60px;
+    left: 25%;
     min-width: 177px;
     z-index: 1;
 
+    @media screen and (min-width:400px) {
+        left: 37%;
+    }
+
+    @media screen and (min-width:$mobile) {
+        left: 50%;
+    }
+
+    // @media screen and (min-width:525px) {
+    //         left: 45%;
+    //     }
+
+    @media screen and (min-width:637px) {
+        left: 48%;
+    }
+
     @media screen and (min-width:$tablet) {
-        right: 10%;
-    }
-
-    @media screen and (min-width:840px) {
-        right: 15%;
-    }
-
-    @media screen and (min-width:950px) {
-        right: 20%;
-    }
-
-    @media screen and (min-width:1100px) {
-        right: 25%;
+        left: 50%;
     }
 
     @media screen and (min-width:$desktop) {
-        right: 9%;
-    }
-
-    @media screen and (min-width:1350px) {
-        right: 16%;
+        left: 55%;
     }
 }
 
