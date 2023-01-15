@@ -32,28 +32,30 @@
         font-size: 20px;
         line-height: 1.85;
     }
+
+    // dots
+
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 6px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        color: $dot-reviews-color;
+        -webkit-font-smoothing: antialiased;
+        }
+        
+        .slick-dots li.slick-active button:before {
+        color: $background-color;
+        }
 }
 
-// dots
 
-.slick-dots li button:before {
-font-family: 'slick';
-font-size: 6px;
-line-height: 20px;
-position: absolute;
-top: 0;
-left: 0;
-width: 20px;
-height: 20px;
-content: '•';
-text-align: center;
-color: $dot-reviews-color;
--webkit-font-smoothing: antialiased;
-}
-
-.slick-dots li.slick-active button:before {
-color: $background-color;
-}
 
 @media screen and (max-width: $pre-tablet) {
 .reviews .karusel {
@@ -97,6 +99,53 @@ color: $background-color;
             font-size: 16px;
             line-height: 1.88;
             width: 750px;
+        }
+    }
+}
+
+.gallery .karusel {
+    & .slick-dots {
+        display: none;
+    }
+
+    & .slick-dots li button {
+        display: none;
+    }
+
+    & .slick-dots li button:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .gallery .karusel {
+        &__img {
+            width: 280px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: $mobile) {
+    .gallery .karusel {
+        &__img {
+            width: 440px;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .gallery .karusel {
+        &__img {
+            width: 704px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .gallery .karusel {
+        &__img {
+            width: 1013px;
         }
     }
 }
