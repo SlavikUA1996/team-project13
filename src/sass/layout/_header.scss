@@ -106,10 +106,9 @@ header {
     position: absolute;
     top: 15px;
     color: currentColor;
-
-    &:focus {
-        color: $text-minor-color;
-    }
+}
+.btn-light:hover svg {
+    fill: $text-minor-color;
 }
 
 // Hero button
