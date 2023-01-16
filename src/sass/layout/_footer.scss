@@ -78,10 +78,15 @@ max-width: 100%;
     background-color: #F8D24E;
     border-radius: 50%;
 
+
+
 }   
 
 .soc-list__icon {
     fill: #84A178;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms;
 
 }
 .soc-list__link:focus .soc-list__icon,
