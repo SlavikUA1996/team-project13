@@ -3,7 +3,7 @@
 }
 
 .advantages__container {
-  // padding-top: 60px;
+  padding-top: 35px;
   padding-bottom: 60px;
   padding-left: 16px;
   padding-right: 16px;
@@ -11,20 +11,20 @@
   margin-right: auto;
   background-color: $background-color;
 
-  @media screen and (min-width: 460px) {
+  @media screen and (min-width: 480px) {
     padding-left: 125px;
     padding-right: 125px;
   }
 
-  @media screen and (min-width: 760px) {
-    // padding-top: 80px;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
     padding-bottom: 204px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 76px;
+    padding-right: 76px;
   }
 
   @media screen and (min-width: 1200px) {
-    // padding-top: 146px;
+    padding-top: 30px;
     padding-bottom: 178px;
   }
 }
@@ -60,7 +60,7 @@ p {
   @media screen and (min-width: 480px) {
     flex-basis: 100%;
   }
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 160px) / 3);
     &:not(:last-child) {
       padding-bottom: 0;
@@ -78,7 +78,7 @@ p {
 
   padding-top: 16px;
 
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     padding-top: 32px;
     font-size: 48px;
     line-height: 59px;
@@ -115,18 +115,25 @@ p {
 }
 
 .advantages__text {
+  max-width: 230px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
+  display: inline-block;
+  text-align: center;
   margin-top: 16px;
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
-
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
+    max-width: 152px;
     margin-top: 12px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
   }
   @media screen and (min-width: 1200px) {
+    max-width: 368px;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
