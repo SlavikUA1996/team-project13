@@ -1,0 +1,87 @@
+.gallery {
+    // position: relative;
+}
+
+// @media screen and (max-width: 479px) {
+//     .gallery {
+//         background-image:
+//         url(../images/Background_mobile1x-min.jpg);
+//         height: 1037px;
+
+//         @media (min-device-pixel-ratio: 2),
+//         (-webkit-min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             .gallery {
+//                 background-image:
+//                     url(../images/Background_mobile2x-min.jpg);
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (min-width: $mobile) {
+//     .gallery {
+//         background-image:
+//         url(../images/Background_mobile1x-min.jpg);
+//         height: 1131px;
+
+//         @media (min-device-pixel-ratio: 2),
+//         (-webkit-min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             .gallery {
+//                 background-image:
+//                     url(../images/Background_mobile2x-min.jpg);
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (min-width: $tablet) {
+//     .gallery {
+//         background-image:
+//         url(../images/Background_tablet1x-min.jpg);
+//         height: 1017px;
+
+//         @media (min-device-pixel-ratio: 2),
+//         (-webkit-min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             .gallery {
+//                 background-image:
+//                     url(../images/Background_tablet2x-min.jpg);
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (min-width: $desktop) {
+//     .gallery {
+//         background-image:
+//         url(../images/Background_desktop1x-min.jpg);
+//         height: 1157px;
+
+//         @media (min-device-pixel-ratio: 2),
+//         (-webkit-min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             .gallery {
+//                 background-image:
+//                     url(../images/Background_desktop2x-min.jpg);
+//             }
+//         }
+//     }
+// }
+
+@media screen and (max-width: $pre-tablet) {
+    .gallery {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .gallery {
+        padding-top: 80px;
+    }
+}
