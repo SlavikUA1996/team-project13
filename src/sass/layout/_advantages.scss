@@ -1,3 +1,7 @@
+.advantages {
+  background-color: $background-color;
+}
+
 .advantages__title {
   @include visually-hidden;
 }
@@ -9,7 +13,6 @@
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  background-color: $background-color;
 
   @media screen and (min-width: 480px) {
     padding-left: 125px;
@@ -21,11 +24,13 @@
     padding-bottom: 204px;
     padding-left: 76px;
     padding-right: 76px;
+    width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 30px;
     padding-bottom: 178px;
+    width: 1200px;
   }
 }
 
