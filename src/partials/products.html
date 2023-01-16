@@ -1,0 +1,132 @@
+<section class="products section">
+    <div class="container">
+      <h2 class="products__title">
+        <span class="products__title-span">100% natural</span>
+        <br />
+        products
+      </h2>
+
+      <ul class="products__list list">
+        <li class="products__item">
+          <div class="products__img"></div>
+          <h3 class="products__name">ice cream</h3>
+          <p class="products__desc">
+            Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
+          </p>
+          <button type="button" data-modal-open-1 class="products__button btn">
+            <svg class="products__icon" width="40" height="16">
+              <use href="./images/icon.svg#icon-arrow-button"></use>
+            </svg>
+          </button>
+        </li>
+
+        <li class="products__item">
+          <div class="products__img"></div>
+          <h3 class="products__name">ice coffee</h3>
+          <p class="products__desc">
+            Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor
+            enhancers
+          </p>
+          <button type="button" data-modal-open-2 class="products__button btn">
+            <svg class="products__icon" width="40" height="16">
+              <use href="./images/icon.svg#icon-arrow-button"></use>
+            </svg>
+          </button>
+        </li>
+
+        <li class="products__item">
+          <div class="products__img"></div>
+          <h3 class="products__name">milkshakes</h3>
+          <p class="products__desc">
+            Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your
+            choice
+          </p>
+          <button type="button" data-modal-open-3 class="products__button btn">
+            <svg class="products__icon" width="40" height="16">
+              <use href="./images/icon.svg#icon-arrow-button"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div data-modal-0 class="products__modal is-hidden">
+    <button type="button" data-modal-close-0 class="products__modal-close btn">
+      <svg class="products__modal-close-icon" width="20" height="20">
+        <use href="./images/icon.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+
+    <h2 class="products__modal-title">Chololate icecream</h2>
+
+    <div class="products__modal-img"></div>
+
+    <ul class="products__modal-list list">
+      <li class="products__modal-item">
+        <p>320</p>
+        <p>kcal</p>
+      </li>
+
+      <li class="products__modal-item">
+        <p>4g</p>
+        <p>Prote...</p>
+      </li>
+
+      <li class="products__modal-item">
+        <p>8,2g</p>
+        <p>Fats</p>
+      </li>
+
+      <li class="products__modal-item">
+        <p>40,4g</p>
+        <p>Carbs</p>
+      </li>
+    </ul>
+
+    <h3 class="products__modal-ingredient-title">Ingredients</h3>
+
+    <ul class="products__modal-ingredient-list list">
+      <li class="products__modal-ingredient-item">
+        <p>Milk</p>
+        <p>100ml</p>
+      </li>
+
+      <li class="products__modal-ingredient-item">
+        <p>Belgian chocolate</p>
+        <p>20g</p>
+      </li>
+
+      <li class="products__modal-ingredient-item">
+        <p>Cream</p>
+        <p>150 ml</p>
+      </li>
+
+      <li class="products__modal-ingredient-item">
+        <p>Cocoa powder</p>
+        <p>30g</p>
+      </li>
+
+      <li class="products__modal-ingredient-item">
+        <p>Sugar</p>
+        <p>40g</p>
+      </li>
+
+      <li class="products__modal-ingredient-item">
+        <p>Vanilla sugar</p>
+        <p>10g</p>
+      </li>
+    </ul>
+
+    <form class="products__modal-form">
+      <input class="products__modal-input" type="text" name="name" placeholder="Name" required />
+
+      <input class="products__modal-input" type="tel" name="phone" placeholder="Phone" required />
+
+      <textarea class="products__modal-textarea" name="comment" placeholder="Comment"></textarea>
+
+      <button class="products__modal-button btn" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="../js/products.js"></script>
