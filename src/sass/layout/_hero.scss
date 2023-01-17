@@ -1,9 +1,11 @@
 /* Hero */
 
-.hero {
+.hero 
+{
     position: relative;
     padding-top: 36px;
     padding-bottom: 236px;
+    background-color: $background-color;
 
     @media screen and (min-width:$mobile) {
         padding-bottom: 150px;
@@ -19,6 +21,7 @@
         padding-bottom: 65px;
     }
 }
+
 
 .hero__title {
     font-family: 'Seymour One';
@@ -103,10 +106,12 @@
 
 .subtitle__container {
     display: flex;
+    align-items: center;
 }
 
 .hero__foto {
     margin-top: 12px;
+    margin-right: 32px;
 
     @media screen and(max-width:$pre-tablet) {
         display: none;
@@ -114,21 +119,16 @@
 
     @media screen and(min-width:$desktop) {
         margin-top: 42px;
+        margin-left: 16px;
     }
 
 }
 
 .hero__subtitle {
-    margin-top: 44px;
-    margin-left: 32px;
+    
 
     @media screen and(max-width:$pre-tablet) {
         display: none;
-    }
-
-    @media screen and(min-width:$desktop) {
-        margin-top: 122px;
-        margin-left: 16px;
     }
 }
 
@@ -143,6 +143,7 @@
     margin-bottom: 12px;
 
     @media screen and(min-width:$desktop) {
+        margin-top: 50px;
         margin-bottom: 24px;
         width: 200px;
         font-size: 14px;
