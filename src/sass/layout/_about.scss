@@ -1,6 +1,6 @@
 .about{
     padding-top: 60px;
-    padding-bottom: 25px;
+    padding-bottom: 60px;
     background-color: $background-color;
     color:$text-primary-color;
 }
@@ -90,11 +90,18 @@
     text-align: center;
     color: $text-btn-color;
     margin: 0 auto;
+
+    transition-timing-function: background-color cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms;
+
     svg{
         width: 12px;
         height: 12px;
         fill:$text-btn-color;
         margin-left: 4px;
+    
+        transition-timing-function: fill cubic-bezier(0.4, 0, 0.2, 1);
+        transition: 250ms;
     }
     &:hover{
         background-color: #0A8817;
