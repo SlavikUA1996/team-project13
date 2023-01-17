@@ -88,9 +88,6 @@
         left: 50%;
     }
 
-    // @media screen and (min-width:525px) {
-    //         left: 45%;
-    //     }
 
     @media screen and (min-width:637px) {
         left: 48%;
@@ -148,6 +145,9 @@
 
     @media screen and(min-width:$desktop) {
         margin-bottom: 24px;
+        width: 200px;
+        font-size: 14px;
+        line-height: calc(20 / 14);
     }
 }
 

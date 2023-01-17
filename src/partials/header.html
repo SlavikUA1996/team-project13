@@ -1,6 +1,6 @@
 <!-- Header -->
 <header>
-    <div class="header__container container">
+    <div class="header__container container" id="header">
         <picture class="header__logo">
             <!-- desktop screen -->
             <source srcset="./images/png1x-logo-desktop-min.png 1x, 
@@ -16,10 +16,10 @@
 
         <nav class="navigation">
             <ul class="navigation__list list">
-                <li class="navigation__item"><a class="navigation__link link" href="">Home</a></li>
-                <li class="navigation__item"><a class="navigation__link link" href="">How it’s made?</a></li>
-                <li class="navigation__item"><a class="navigation__link link" href="">Our products</a></li>
-                <li class="navigation__item"><a class="navigation__link link" href="">Contact</a></li>
+                <li class="navigation__item"><a class="navigation__link link" href="#header">Home</a></li>
+                <li class="navigation__item"><a class="navigation__link link" href="#about">How it’s made?</a></li>
+                <li class="navigation__item"><a class="navigation__link link" href="#products-section">Our products</a></li>
+                <li class="navigation__item"><a class="navigation__link link" href="#contant">Contact</a></li>
             </ul>
         </nav>
 
@@ -62,12 +62,12 @@
 
     <nav class="mobile-navigation">
         <ul class="mobile-menu list">
-            <li class="mobile-menu-item"><a class="mobile-menu-link link" href="">Home</a></li>
-            <li class="mobile-menu-item"><a class="mobile-menu-link mobile-menu-dark link" href="">How it’s made?</a>
-            </li>
-            <li class="mobile-menu-item"><a class="mobile-menu-link link" href="">Our products</a></li>
-            <li class="mobile-menu-item"><a class="mobile-menu-link link" href="">Contact</a></li>
-        </ul>
+                <li class="navigation__item"><a class="navigation__link link" href="#header">Home</a></li>
+                <li class="navigation__item"><a class="navigation__link link" href="#about">How it’s made?</a></li>
+                <li class="navigation__item"><a class="navigation__link link" href="#products-section">Our products</a></li>
+                <li class="navigation__item"><a class="navigation__link link" href="#contant">Contact</a></li>
+            </ul>
+       
     </nav>
     <button class="mobile-menu-button btn-light" type="button">
         <span>Buy now</span>
@@ -78,3 +78,38 @@
 </div>
 </header>
 
+<!-- Modal product -->
+<form>
+    <ul class="header_product-checkbox list">
+        <li class="header_product-item header_li-1">
+            <div class="header_product-container">
+                <label><input type="checkbox" name="checked-product"><span>
+                        <p class="header_item-description">ice cream</p>
+                    </span><img src="./images/png1x-ice-creame-modal-buy-min.png" alt="photo of ice cream">
+        <li class="header_product-item header_li-2">
+            <div class="header_product-container">
+                <label><input type="checkbox" name="checked-product"><span>
+                        <p class="header_item-description">ice coffee</p>
+                    </span><img src="./images/png1x-ice-coffee-modal-buy-min.png" alt="photo of ice coffee">
+                </label>
+            </div>
+        </li>
+        <li class="header_product-item header_li-3">
+            <div class="header_product-container">
+                <label><input type="checkbox" name="checked-product"><span>
+                        <p class="header_item-description">milkshake</p>
+                    </span><img src="./images/png1x-milkshakes-modal-buy-min.png" alt="photo of milkshake">
+                </label>
+            </div>
+        </li>
+    </ul>
+    <label class="form__client-info-block">
+        <input type="text" required placeholder="Name" /></label>
+    <label class="form__client-info-block">
+        <input type="tel" required placeholder="Phone" />
+        <label class="form__client-info-block"><textarea name="coment" rows="2" placeholder="Comment"
+                class="form__coment"></textarea>
+        </label>
+        <button type="submit" class="header_modal-subm-btn">Submit</button>
+</form>
+</div>
