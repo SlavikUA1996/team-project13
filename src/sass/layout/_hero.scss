@@ -4,6 +4,7 @@
     position: relative;
     padding-top: 36px;
     padding-bottom: 236px;
+    background-color: $background-color;
 
     @media screen and (min-width:$mobile) {
         padding-bottom: 150px;
@@ -19,6 +20,7 @@
         padding-bottom: 65px;
     }
 }
+
 
 .hero__title {
     font-family: 'Seymour One';

@@ -1,5 +1,9 @@
-/* Header */
+// * Header *
+// body{
+//     background-color: $background-color;
+// }
 header {
+    background-color: $background-color;
     position: relative;
     padding-top: 14px;
     justify-content: baseline;
@@ -8,7 +12,9 @@ header {
         padding-top: 20px;
     }
 }
-
+.link{
+    text-decoration: none;
+}
 .header__container {
     display: flex;
     align-items: center;
@@ -68,22 +74,22 @@ header {
     height: 42px;
     transition: background-color 250ms linear;
 
-    &:hover {
-        background-color: #0A8817;
-        border: 1px solid #0A8817;
+        &:hover {
+            background: #0A8817;
+            border: 1px solid #0A8817;
+        }
+
+        &:focus {
+            background: #0A8817;
+            color: $text-minor-color;
+            border: 1px solid #0A8817;
+        }
+
+        &:disabled {
+            border: #ABABAB;
+        }
     }
 
-    &:focus {
-        background-color: #0A8817;
-        color: $text-minor-color;
-        border: 1px solid #0A8817;
-    }
-
-    &:disabled {
-        background-color: #ABABAB;
-    }
-
-}
 
 .header__button {
     margin-left: 36px;
@@ -108,7 +114,7 @@ header {
     color: currentColor;
 }
 .btn-light:hover svg {
-    fill: $text-minor-color;
+    fill: $text-btn-color;
 }
 
 .btn-light:focus svg {
@@ -141,19 +147,10 @@ header {
         padding-left: 34px;
     }
 
-    &:hover {
-        border: 1px solid #0A8817;
     }
-
-    &:focus {
-        color: $text-minor-color;
-        border: 1px solid #0A8817;
-    }
-
-    &:disabled {
-        border: 1px solid #ABABAB;
-    }
-
+.button__link{
+    color: $text-btn-color;
+    text-decoration: none;
 }
 
 .hero__button span {
@@ -168,6 +165,25 @@ header {
 
 .hero__list {
     display: flex;
+}
+.hero__button--first {
+    &:hover {
+        border: 1px solid #0A8817;
+    }
+
+    &:focus {
+        border: 1px solid #0A8817;
+    }
+
+    &:disabled {
+        border: #ABABAB;
+    }
+}
+
+.hero__button--first a {
+    &:focus {
+        color: $text-minor-color;
+    }
 }
 
 .hero__button--second {
@@ -188,7 +204,6 @@ header {
 
     &:hover {
         color: #0A8817;
-
     }
 
     &:focus {
@@ -198,6 +213,21 @@ header {
     &:disabled {
         color: #ABABAB;
     }
+}
+
+.hero__button--second a{
+    color: $bcg-button-icon-accent-color;
+    &:hover {
+            color: #0A8817;
+        }
+    
+        &:focus {
+            color: $text-minor-color;
+        }
+    
+        &:disabled {
+            color: #ABABAB;
+        }
 }
 
 
@@ -228,6 +258,16 @@ header {
     margin-left: auto;
 
     transition: all 250ms linear;
+}
+.mobile-menu .navigation__link{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    @media screen and(min-width:$mobile) {
+        font-size: 48px;
+        line-height: 59px;
+        }
 }
 
 // Modal-product
