@@ -1,3 +1,32 @@
+.reviews {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -890px;
+    padding-bottom: 60px;
+    background-color: $background-color;
+
+    @media screen and (min-width: $tablet) {
+            margin-bottom: -650px;
+        }
+    
+    @media screen and (min-width: $desktop) {
+        margin-bottom: -670px;
+    }
+
+    &  .container {
+        @extend .container;
+        transform: translateY(-890px);
+
+        @media screen and (min-width: $tablet) {
+            transform: translateY(-650px);
+        }
+
+        @media screen and (min-width: $desktop) {
+            transform: translateY(-670px);
+        }
+    }
+}
+
 @media screen and (max-width: $pre-tablet) {
     .reviews {
         padding: 80px 0 60px 0;

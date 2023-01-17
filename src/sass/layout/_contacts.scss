@@ -1,16 +1,16 @@
 .contacts {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -349px;
+    margin-bottom: -60px;
     padding-bottom: 60px;
     background-color: $background-color;
 
     @media screen and (min-width: $tablet) {
-            margin-bottom: -299px;
+            margin-bottom: -80px;
         }
     
     @media screen and (min-width: $desktop) {
-        margin-bottom: -128px;
+        margin-bottom: -100px;
     }
 
     // @media screen and (max-width: $pre-tablet) {
@@ -27,14 +27,14 @@
     
     &__container {
         @extend .container;
-        transform: translateY(-349px);
+        transform: translateY(-60px);
 
         @media screen and (min-width: $tablet) {
-            transform: translateY(-299px);
+            transform: translateY(-80px);
         }
 
         @media screen and (min-width: $desktop) {
-            transform: translateY(-128px);
+            transform: translateY(-100px);
         }
     }
 
