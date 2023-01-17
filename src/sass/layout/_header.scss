@@ -542,3 +542,7 @@ header {
         font-size: 20px;
     }
 }
+
+.form__input:invalid{
+   background-color: (210, 149, 149);
+}
