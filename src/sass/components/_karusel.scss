@@ -32,28 +32,30 @@
         font-size: 20px;
         line-height: 1.85;
     }
+
+    // dots
+
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 6px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        color: $dot-reviews-color;
+        -webkit-font-smoothing: antialiased;
+        }
+        
+        .slick-dots li.slick-active button:before {
+        color: $background-color;
+        }
 }
 
-// dots
 
-.slick-dots li button:before {
-font-family: 'slick';
-font-size: 6px;
-line-height: 20px;
-position: absolute;
-top: 0;
-left: 0;
-width: 20px;
-height: 20px;
-content: '•';
-text-align: center;
-color: $dot-reviews-color;
--webkit-font-smoothing: antialiased;
-}
-
-.slick-dots li.slick-active button:before {
-color: $background-color;
-}
 
 @media screen and (max-width: $pre-tablet) {
 .reviews .karusel {
@@ -97,6 +99,87 @@ color: $background-color;
             font-size: 16px;
             line-height: 1.88;
             width: 750px;
+        }
+    }
+}
+
+.gallery .karusel {
+    // position: absolute;
+    // z-index: 1;
+    // top: 0;
+    // left: 0;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    & .slick-dots {
+        display: none;
+    }
+
+    & .slick-dots li button {
+        display: none;
+    }
+
+    & .slick-dots li button:before {
+        display: none;
+    }
+
+    & .slick-next:before {
+        display: none;
+    }
+
+    & .slick-prev:before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .gallery .karusel {
+        &__img {
+            width: 280px;
+            border-radius: 8px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: $mobile) {
+    .gallery .karusel {
+        &__img {
+            width: 440px;
+            border-radius: 8px;
+        }
+
+        &__item {
+            width: 440px;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .gallery .karusel {
+        &__img {
+            width: 704px;
+            border-radius: 18px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .gallery .karusel {
+        &__img {
+            width: 1013px;
+            border-radius: 24px;
         }
     }
 }
